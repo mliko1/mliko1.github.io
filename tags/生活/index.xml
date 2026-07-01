@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>生活 on 我的个人博客</title>
-		<link>https://mliko1.github.io/tags/%E7%94%9F%E6%B4%BB/</link>
+		<link>http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/</link>
 		<description>Recent content in 生活 on 我的个人博客</description>
 		<generator>Hugo</generator>
 		<language>zh-cn</language>
@@ -12,12 +12,12 @@
 		
 			<lastBuildDate>Tue, 30 Jun 2026 16:00:00 +0800</lastBuildDate>
 		
-			<atom:link href="https://mliko1.github.io/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/tags/%E7%94%9F%E6%B4%BB/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>第二篇博客</title>
-				<link>https://mliko1.github.io/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+				<link>http://localhost:1313/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
 				<pubDate>Tue, 30 Jun 2026 16:00:00 +0800</pubDate>
-				<guid>https://mliko1.github.io/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+				<guid>http://localhost:1313/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
 				<description>&lt;h2 id=&#34;这是我的第二篇博客&#34;&gt;这是我的第二篇博客&lt;/h2&gt;&#xA;&lt;p&gt;用纯鼠标创建的文件，终于不报错了！&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hugo 有点折腾，但挺有意思&lt;/li&gt;&#xA;&lt;li&gt;博客已经上线 &lt;a href=&#34;@stylelink?key=@replace_urlLink_ae075a18b7d30618c77f3231ee6b9fd9&amp;amp;style=underline&amp;amp;display=urlLink&amp;amp;icon=&amp;amp;iconDark=&amp;amp;iconBlod=&amp;amp;iconBlodDark=&#34;&gt;https://mliko1.github.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;慢慢写，慢慢美化&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
 			</item>
 	</channel>
