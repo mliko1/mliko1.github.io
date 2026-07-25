@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>我的个人博客</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.163.3">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+
+    <link rel="stylesheet" href="/ananke/css/main.9b30c501ce1c7f83819860c1d3403e57c208aa6c5f4379e71aa37e42780ff262.css" integrity="sha256-mzDFAc4cf4OBmGDB00A&#43;V8IIqmxfQ3nnGqN&#43;QngP8mI=" crossorigin="anonymous">
+    <script>
+  (function () {
+    "use strict";
+
+    
+    
+    function revealButtons() {
+      var buttons = document.querySelectorAll(".code-block .code-copy[hidden]");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].hidden = false;
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", revealButtons);
+    } else {
+      revealButtons();
+    }
+
+    function flash(button) {
+      var label = button.querySelector(".code-copy-label");
+      var previous = label ? label.textContent : null;
+      button.classList.add("is-copied");
+      if (label) label.textContent = "Copied";
+      window.setTimeout(function () {
+        button.classList.remove("is-copied");
+        if (label && previous !== null) label.textContent = previous;
+      }, 2000);
+    }
+
+    function legacyCopy(text) {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.setAttribute("readonly", "");
+      area.style.position = "absolute";
+      area.style.left = "-9999px";
+      document.body.appendChild(area);
+      area.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (e) {
+        ok = false;
+      }
+      document.body.removeChild(area);
+      return ok;
+    }
+
+    function copyFrom(button) {
+      var container = button.closest(".code-block");
+      if (!container) return;
+      var pre = container.querySelector("pre");
+      if (!pre) return;
+      var source = pre.querySelector("code") || pre;
+      var text = source.innerText;
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(button); },
+          function () { if (legacyCopy(text)) flash(button); }
+        );
+      } else if (legacyCopy(text)) {
+        flash(button);
+      }
+    }
+
+    document.addEventListener("click", function (event) {
+      var button = event.target.closest(".code-copy");
+      if (button) copyFrom(button);
+    });
+  })();
+</script>
+
+    
+      
+
+    
+
+    
+    
+      <link href="/tags/%E5%BC%80%E6%BA%90/index.xml" rel="alternate" type="application/rss+xml" title="我的个人博客" />
+      <link href="/tags/%E5%BC%80%E6%BA%90/index.xml" rel="feed" type="application/rss+xml" title="我的个人博客" />
+      
+    
+
+    
+      <link rel="canonical" href="https://mliko1.github.io/tags/%E5%BC%80%E6%BA%90/">
+    
+
+    
+    
+    <meta property="og:url" content="https://mliko1.github.io/tags/%E5%BC%80%E6%BA%90/">
+	<meta property="og:site_name" content="我的个人博客">
+	<meta property="og:title" content="开源">
+	<meta property="og:locale" content="zh_cn">
+	<meta property="og:type" content="website">
+
+	<meta itemprop="name" content="开源">
+	<meta itemprop="datePublished" content="2026-07-24T16:00:00+08:00">
+	<meta itemprop="dateModified" content="2026-07-24T16:00:00+08:00">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="开源">
+
+      
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production is-term">
+
+  <header>
+    <div class="pb3-m pb6-l bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="/" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        我的个人博客
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/" title="首页 page">
+              首页
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/posts/" title="文章 page">
+              文章
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/tags/" title="标签 page">
+              标签
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/categories/" title="分类 page">
+              分类
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="tc-l pv3 ph3 ph4-ns">
+        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
+          开源
+        </h1>
+        
+      </div>
+    </div>
+  </header>
+
+<main class="pb7" role="main">
+  
+  
+
+  <article class="pa3 pa4-ns nested-copy-line-height">
+    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section>
+    <section class="flex-ns mt5 flex-wrap justify-around">
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          
+<div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Posts</span>
+    
+      <time class="f6 db" datetime="2026-07-24T16:00:00+08:00">July 24, 2026</time>
+    
+    <h1 class="f3 near-black">
+      <a href="/posts/github%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="link black dim">
+        GitHub 协作开发学习笔记——以心情气象站项目为例
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <h2 id="为什么学-github">为什么学 GitHub</h2>
+<p>GitHub 不只是一个代码托管平台，更是开源协作的核心基础设施。这学期通过「心情气象站」（MoodMeteorology）项目，我从零开始学习了 GitHub 的完整工作流，包括仓库管理、Issue、Pull Request、Code Review、CI/CD 和版本发布。下面是我的学习记录。</p>
+<h2 id="1-仓库与项目结构">1. 仓库与项目结构</h2>
+<p>我们团队的项目仓库地址：<a href="https://github.com/Bistu-OSSDT-2026/MoodMeteorology">MoodMeteorology</a></p>
+<p>项目采用 Node.js 后端 + 前端静态页面架构，主要文件结构：</p>
+<div class="code-block">
+    <button class="code-copy" type="button" hidden aria-label="Copy code to clipboard">
+      <span class="code-copy-label" aria-hidden="true">Copy</span>
+    </button>
+    <pre tabindex="0"><code>├── treehole（1）/          # 树洞模块源码
+├── server.js              # 后端入口
+├── package.json           # 依赖配置
+├── README.md              # 项目文档
+├── LICENSE.md             # MIT 许可证
+└── CONTRIBUTING.md        # 贡献说明</code></pre>
+  </div><p>一个好的开源项目需要包含：</p>
+<ul>
+<li><strong>README</strong>：项目介绍和使用说明</li>
+<li><strong>LICENSE</strong>：开源许可证（我们选了 MIT）</li>
+<li><strong>CONTRIBUTING</strong>：贡献者指南</li>
+</ul>
+<h2 id="2-issue-驱动开发">2. Issue 驱动开发</h2>
+<p>我们通过 Issue 来管理所有开发任务，这是学到的最重要的协作方式之一。</p>
+<p><strong>我的 Issue 记录：</strong></p>
+<ul>
+<li><a href="https://github.com/Bistu-OSSDT-2026/MoodMeteorology/issues/27">#27 优化前端页面结构与交互体验</a></li>
+<li><a href="https://github.com/Bistu-OSSDT-2026/MoodMeteorology/issues/3">#3 首页功能问题</a></li>
+</ul>
+<p>每个功能、每次修改都先开 Issue，描述清楚需求，然后在独立分支上开发，最后通过 Pull Request 合并。这样做的好处是：</p>
+    </div>
+    <a href="/posts/github%E5%8D%8F%E4%BD%9C%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+    </section>
+    </article>
+</main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="https://mliko1.github.io/" >
+    &copy;  我的个人博客 2026 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
