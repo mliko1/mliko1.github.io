@@ -1,0 +1,43 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>mliko 的小窝</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="开源课程实践学习记录 · 小程序开发 / 微信云开发 / 静态站点建站踩坑"><meta name=generator content="Hugo 0.166.0"><meta name=robots content="index, follow"><meta name=author content="mliko1"><link rel=stylesheet href=/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin=anonymous><script>(function(){"use strict";function t(){for(var t=document.querySelectorAll(".code-block .code-copy[hidden]"),e=0;e<t.length;e++)t[e].hidden=!1}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",t):t();function e(e){var t=e.querySelector(".code-copy-label"),n=t?t.textContent:null;e.classList.add("is-copied"),t&&(t.textContent="Copied"),window.setTimeout(function(){e.classList.remove("is-copied"),t&&n!==null&&(t.textContent=n)},2e3)}function n(e){var n,t=document.createElement("textarea");t.value=e,t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",document.body.appendChild(t),t.select(),n=!1;try{n=document.execCommand("copy")}catch{n=!1}return document.body.removeChild(t),n}function s(t){var s,o,a,i=t.closest(".code-block");if(!i)return;if(s=i.querySelector("pre"),!s)return;a=s.querySelector("code")||s,o=a.innerText,navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(o).then(function(){e(t)},function(){n(o)&&e(t)}):n(o)&&e(t)}document.addEventListener("click",function(e){var t=e.target.closest(".code-copy");t&&s(t)})})()</script><link href=/tags/%E4%BA%91%E5%BC%80%E5%8F%91/index.xml rel=alternate type=application/rss+xml title="mliko 的小窝"><link href=/tags/%E4%BA%91%E5%BC%80%E5%8F%91/index.xml rel=feed type=application/rss+xml title="mliko 的小窝"><link rel=canonical href=https://mliko1.github.io/tags/%E4%BA%91%E5%BC%80%E5%8F%91/><meta property="og:url" content="https://mliko1.github.io/tags/%E4%BA%91%E5%BC%80%E5%8F%91/"><meta property="og:site_name" content="mliko 的小窝"><meta property="og:title" content="云开发"><meta property="og:description" content="开源课程实践学习记录 · 小程序开发 / 微信云开发 / 静态站点建站踩坑"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="website"><meta itemprop=name content="云开发"><meta itemprop=description content="开源课程实践学习记录 · 小程序开发 / 微信云开发 / 静态站点建站踩坑"><meta itemprop=datePublished content="2026-09-26T20:00:00+08:00"><meta itemprop=dateModified content="2026-09-26T20:00:00+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="云开发"><meta name=twitter:description content="开源课程实践学习记录 · 小程序开发 / 微信云开发 / 静态站点建站踩坑"></head><body class="ma0 avenir bg-near-white production is-term"><header><div class="pb3-m pb6-l bg-black"><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l center items-center justify-between"><a href=/ class="f3 fw2 hover-white white-90 dib no-underline">mliko 的小窝</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/ title="首页 page">首页</a></li><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/posts/ title="文章 page">文章</a></li></ul><div class=ananke-socials></div></div></div></nav><div class="tc-l pv3 ph3 ph4-ns"><h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">云开发</h1></div></div></header><main class=pb7 role=main><article class="pa3 pa4-ns nested-copy-line-height"><section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links mid-gray"></section><section class="flex-ns mt5 flex-wrap justify-around"><div class="w-100 w-30-l mb4 relative bg-white"><div class="w-100 mb4 nested-copy-line-height relative bg-white"><div class="mb3 pa4 gray overflow-hidden bg-white"><span class="f6 db">Posts</span>
+<time class="f6 db" datetime=2026-09-26T20:00:00+08:00>September 26, 2026</time><h1 class="f3 near-black"><a href=/posts/%E5%8C%BF%E5%90%8D%E5%BF%83%E4%BA%8B%E9%82%AE%E5%B1%80-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AE%9E%E6%88%98/ class="link black dim">用微信云开发从零做一个「匿名心事邮局」小程序（课程实战复盘）</a></h1><div class="nested-links f5 lh-copy nested-copy-line-height"><p>大家好呀 🐾 这是我的第一个课程项目复盘。上学期我们有一门「开源软件开发」实践课，要求做一个能真正上线的作品。我做了个叫 <strong>「匿名心事邮局」</strong> 的微信小程序——一个温柔的情绪树洞：你可以把心事写成一封信投进邮局，也能随机收到别人的心事，再回一封温暖的信。</p><p>这篇博客把从 0 到上线的全过程摊开来讲，重点放在<strong>微信云开发</strong>这套零成本方案和几个<strong>审核合规</strong>的坑，希望对做小程序新手的朋友有用。</p><h2 id=一为什么要做这个小程序>一、为什么要做这个小程序</h2><p>现在大家压力都不小，但未必愿意跟熟人倾诉。市面上虽然有树洞类 App，但大多要注册、要填手机号，反而让人不敢说真话。</p><p>我的核心想法很简单：<strong>绝对匿名 + 极简</strong>。用户进来不需要注册，系统直接发一个随机昵称（比如「害羞的小猫 0821」），写完就能投信。这样既能保护隐私，又降低了倾诉的心理门槛。</p><blockquote><p>选题小建议：课程项目别一上来就做「大而全」的东西。一个能戳中真实痛点的小功能，比十个半成品更打动人，也更容易在答辩时讲清楚。</p></blockquote><h2 id=二技术选型为什么选微信云开发>二、技术选型：为什么选微信云开发</h2><p>做小程序绕不开「后端放哪」的问题。传统的做法是租一台云服务器 + 买域名 + 备案，对学生来说又贵又麻烦。</p><p>我最后选了 <strong>微信云开发（CloudBase）</strong>，原因很实在：</p><table><thead><tr><th>维度</th><th>传统方案</th><th>微信云开发</th></tr></thead><tbody><tr><td>服务器</td><td>自己租 ECS</td><td>免服务器</td></tr><tr><td>域名/备案</td><td>必须</td><td>不需要</td></tr><tr><td>用户登录</td><td>自己写鉴权</td><td>自带 <code>openid</code></td></tr><tr><td>起步成本</td><td>几十~几百/月</td><td>免费额度够用</td></tr><tr><td>上线复杂度</td><td>高</td><td>低</td></tr></tbody></table><p>云开发把 <strong>云数据库（文档型）、云函数（Node.js）、云存储、以及内容安全 API</strong> 打包好了，小程序端直接用官方 SDK 调用，非常适合个人小项目「零成本部署」。</p><h2 id=三项目结构>三、项目结构</h2><p>整个工程非常轻量，没有后端仓库，逻辑分散在「前端页面 + 云函数」里：</p><div class=code-block><button class=code-copy type=button hidden aria-label="Copy code to clipboard">
+<span class=code-copy-label aria-hidden=true>Copy</span></button><pre tabindex=0><code>miniprogram/
+├── pages/
+│   ├── index/        # 首页：投信入口
+│   ├── mailbox/      # 树洞信箱：随机读信 + 回信
+│   └── mine/         # 我的：查看自己投出的信
+├── cloudfunctions/
+│   ├── sendLetter/   # 发信（含内容安全审核）
+│   ├── getRandomLetter/  # 随机取一封别人心事
+│   └── replyLetter/  # 回信
+├── utils/
+└── app.js / app.json</code></pre></div><p>核心数据存在云数据库的一个集合 <code>letters</code> 里，每条记录大致长这样：</p></div><a href=/posts/%E5%8C%BF%E5%90%8D%E5%BF%83%E4%BA%8B%E9%82%AE%E5%B1%80-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AE%9E%E6%88%98/ class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a></div></div></div></section></article></main><footer class="bg-black bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href=https://mliko1.github.io/>&copy; mliko 的小窝 2026</a><div><div class=ananke-socials></div></div></div></footer></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+baseURL = "https://mliko1.github.io/"
+locale = "zh-cn"
+title = "mliko 的小窝"
+theme = "ananke"
+enableEmoji = true
+
+[params]
+  description = "开源课程实践学习记录 · 小程序开发 / 微信云开发 / 静态站点建站踩坑"
+  author = "mliko1"
+
+[params.ananke]
+  # 首页展示最新文章卡片
+  show_recent_posts = true
+  recent_posts_number = 5
+  [params.ananke.home]
+    content_alignment = "center"
+
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "文章"
+    url = "/posts/"
+    weight = 2
