@@ -1,0 +1,90 @@
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>用微信云开发从零做一个「匿名心事邮局」小程序（课程实战复盘） | mliko 的小窝</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="从选题、技术选型到上线审核，复盘一个匿名情绪树洞小程序的完整开发过程，重点讲微信云开发的零成本玩法与平台合规踩坑。"><meta name=generator content="Hugo 0.166.0"><meta name=robots content="index, follow"><meta name=author content="mliko1"><link rel=stylesheet href=/ananke/css/main.02a37ad6c4e155c542d276915a0e3f83f5c7c5fec443350f6e60753f1679b7a7.css integrity="sha256-AqN61sThVcVC0naRWg4/g/XHxf7EQzUPbmB1PxZ5t6c=" crossorigin=anonymous><link rel=stylesheet href=/css/cute-pet.css><script>(function(){"use strict";function t(){for(var t=document.querySelectorAll(".code-block .code-copy[hidden]"),e=0;e<t.length;e++)t[e].hidden=!1}document.readyState==="loading"?document.addEventListener("DOMContentLoaded",t):t();function e(e){var t=e.querySelector(".code-copy-label"),n=t?t.textContent:null;e.classList.add("is-copied"),t&&(t.textContent="Copied"),window.setTimeout(function(){e.classList.remove("is-copied"),t&&n!==null&&(t.textContent=n)},2e3)}function n(e){var n,t=document.createElement("textarea");t.value=e,t.setAttribute("readonly",""),t.style.position="absolute",t.style.left="-9999px",document.body.appendChild(t),t.select(),n=!1;try{n=document.execCommand("copy")}catch{n=!1}return document.body.removeChild(t),n}function s(t){var s,o,a,i=t.closest(".code-block");if(!i)return;if(s=i.querySelector("pre"),!s)return;a=s.querySelector("code")||s,o=a.innerText,navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(o).then(function(){e(t)},function(){n(o)&&e(t)}):n(o)&&e(t)}document.addEventListener("click",function(e){var t=e.target.closest(".code-copy");t&&s(t)})})()</script><link rel=canonical href=https://mliko1.github.io/posts/%E5%8C%BF%E5%90%8D%E5%BF%83%E4%BA%8B%E9%82%AE%E5%B1%80-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AE%9E%E6%88%98/><meta property="og:url" content="https://mliko1.github.io/posts/%E5%8C%BF%E5%90%8D%E5%BF%83%E4%BA%8B%E9%82%AE%E5%B1%80-%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AE%9E%E6%88%98/"><meta property="og:site_name" content="mliko 的小窝"><meta property="og:title" content="用微信云开发从零做一个「匿名心事邮局」小程序（课程实战复盘）"><meta property="og:description" content="从选题、技术选型到上线审核，复盘一个匿名情绪树洞小程序的完整开发过程，重点讲微信云开发的零成本玩法与平台合规踩坑。"><meta property="og:locale" content="zh_cn"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-09-26T20:00:00+08:00"><meta property="article:modified_time" content="2026-09-26T20:00:00+08:00"><meta property="article:tag" content="微信小程序"><meta property="article:tag" content="云开发"><meta property="article:tag" content="项目复盘"><meta property="article:tag" content="微信云开发"><meta itemprop=name content="用微信云开发从零做一个「匿名心事邮局」小程序（课程实战复盘）"><meta itemprop=description content="从选题、技术选型到上线审核，复盘一个匿名情绪树洞小程序的完整开发过程，重点讲微信云开发的零成本玩法与平台合规踩坑。"><meta itemprop=datePublished content="2026-09-26T20:00:00+08:00"><meta itemprop=dateModified content="2026-09-26T20:00:00+08:00"><meta itemprop=wordCount content="285"><meta itemprop=keywords content="微信小程序,云开发,项目复盘,微信云开发"><meta name=twitter:card content="summary"><meta name=twitter:title content="用微信云开发从零做一个「匿名心事邮局」小程序（课程实战复盘）"><meta name=twitter:description content="从选题、技术选型到上线审核，复盘一个匿名情绪树洞小程序的完整开发过程，重点讲微信云开发的零成本玩法与平台合规踩坑。"></head><body class="ma0 avenir bg-near-white production is-page is-page page-匿名心事邮局-小程序实战"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l center items-center justify-between"><a href=/ class="f3 fw2 hover-white white-90 dib no-underline">mliko 的小窝</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/ title="首页 page">首页</a></li><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/posts/ title="文章 page">文章</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="page-匿名心事邮局-小程序实战 flex-l mw7 center ph3 flex-wrap justify-between"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu"><a class="link dim" href=https://mliko1.github.io/posts/>Posts</a></aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">用微信云开发从零做一个「匿名心事邮局」小程序（课程实战复盘）</h1><p class=tracked><strong>mliko1</strong></p><time class="f6 mv4 dib tracked" datetime=2026-09-26T20:00:00+08:00>September 26, 2026</time></header><div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>大家好呀 🐾 这是我的第一个课程项目复盘。上学期我们有一门「开源软件开发」实践课，要求做一个能真正上线的作品。我做了个叫 <strong>「匿名心事邮局」</strong> 的微信小程序——一个温柔的情绪树洞：你可以把心事写成一封信投进邮局，也能随机收到别人的心事，再回一封温暖的信。</p><p>这篇博客把从 0 到上线的全过程摊开来讲，重点放在<strong>微信云开发</strong>这套零成本方案和几个<strong>审核合规</strong>的坑，希望对做小程序新手的朋友有用。</p><h2 id=一为什么要做这个小程序>一、为什么要做这个小程序</h2><p>现在大家压力都不小，但未必愿意跟熟人倾诉。市面上虽然有树洞类 App，但大多要注册、要填手机号，反而让人不敢说真话。</p><p>我的核心想法很简单：<strong>绝对匿名 + 极简</strong>。用户进来不需要注册，系统直接发一个随机昵称（比如「害羞的小猫 0821」），写完就能投信。这样既能保护隐私，又降低了倾诉的心理门槛。</p><blockquote><p>选题小建议：课程项目别一上来就做「大而全」的东西。一个能戳中真实痛点的小功能，比十个半成品更打动人，也更容易在答辩时讲清楚。</p></blockquote><h2 id=二技术选型为什么选微信云开发>二、技术选型：为什么选微信云开发</h2><p>做小程序绕不开「后端放哪」的问题。传统的做法是租一台云服务器 + 买域名 + 备案，对学生来说又贵又麻烦。</p><p>我最后选了 <strong>微信云开发（CloudBase）</strong>，原因很实在：</p><table><thead><tr><th>维度</th><th>传统方案</th><th>微信云开发</th></tr></thead><tbody><tr><td>服务器</td><td>自己租 ECS</td><td>免服务器</td></tr><tr><td>域名/备案</td><td>必须</td><td>不需要</td></tr><tr><td>用户登录</td><td>自己写鉴权</td><td>自带 <code>openid</code></td></tr><tr><td>起步成本</td><td>几十~几百/月</td><td>免费额度够用</td></tr><tr><td>上线复杂度</td><td>高</td><td>低</td></tr></tbody></table><p>云开发把 <strong>云数据库（文档型）、云函数（Node.js）、云存储、以及内容安全 API</strong> 打包好了，小程序端直接用官方 SDK 调用，非常适合个人小项目「零成本部署」。</p><h2 id=三项目结构>三、项目结构</h2><p>整个工程非常轻量，没有后端仓库，逻辑分散在「前端页面 + 云函数」里：</p><div class=code-block><button class=code-copy type=button hidden aria-label="Copy code to clipboard">
+<span class=code-copy-label aria-hidden=true>Copy</span></button><pre tabindex=0><code>miniprogram/
+├── pages/
+│   ├── index/        # 首页：投信入口
+│   ├── mailbox/      # 树洞信箱：随机读信 + 回信
+│   └── mine/         # 我的：查看自己投出的信
+├── cloudfunctions/
+│   ├── sendLetter/   # 发信（含内容安全审核）
+│   ├── getRandomLetter/  # 随机取一封别人心事
+│   └── replyLetter/  # 回信
+├── utils/
+└── app.js / app.json</code></pre></div><p>核心数据存在云数据库的一个集合 <code>letters</code> 里，每条记录大致长这样：</p><div class=code-block><button class=code-copy type=button hidden aria-label="Copy code to clipboard">
+<span class=code-copy-label aria-hidden=true>Copy</span></button><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-json data-lang=json><span style=display:flex><span>{
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;_openid&#34;</span>: <span style=color:#e6db74>&#34;用户唯一标识（云开发自动写入）&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;nickname&#34;</span>: <span style=color:#e6db74>&#34;害羞的小猫 0821&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;content&#34;</span>: <span style=color:#e6db74>&#34;今天答辩好紧张，但是尽力了……&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;mood&#34;</span>: <span style=color:#e6db74>&#34;焦虑&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;replies&#34;</span>: [],
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;createdAt&#34;</span>: <span style=color:#e6db74>&#34;2026-09-20T14:03:00Z&#34;</span>,
+</span></span><span style=display:flex><span>  <span style=color:#f92672>&#34;status&#34;</span>: <span style=color:#e6db74>&#34;published&#34;</span>
+</span></span><span style=display:flex><span>}</span></span></code></pre></div></div><p>注意：<strong>我们不存任何真实个人信息</strong>，昵称是前端随机生成的，数据库只靠 <code>_openid</code> 区分用户。这是「匿名」能成立的关键。</p><h2 id=四核心功能实现>四、核心功能实现</h2><h3 id=1-匿名发信>1. 匿名发信</h3><p>前端收集心情标签和信件内容，调用云函数 <code>sendLetter</code>。云函数里第一件事不是存库，而是<strong>先过内容安全审核</strong>（见第五节），通过后才写入：</p><div class=code-block><button class=code-copy type=button hidden aria-label="Copy code to clipboard">
+<span class=code-copy-label aria-hidden=true>Copy</span></button><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// cloudfunctions/sendLetter/index.js
+</span></span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>cloud</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>require</span>(<span style=color:#e6db74>&#39;wx-server-sdk&#39;</span>)
+</span></span><span style=display:flex><span><span style=color:#a6e22e>cloud</span>.<span style=color:#a6e22e>init</span>({ <span style=color:#a6e22e>env</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>cloud</span>.<span style=color:#a6e22e>DYNAMIC_CURRENT_ENV</span> })
+</span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>db</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>cloud</span>.<span style=color:#a6e22e>database</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#a6e22e>exports</span>.<span style=color:#a6e22e>main</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>async</span> (<span style=color:#a6e22e>event</span>) =&gt; {
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> { <span style=color:#a6e22e>content</span>, <span style=color:#a6e22e>mood</span> } <span style=color:#f92672>=</span> <span style=color:#a6e22e>event</span>
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>openid</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>cloud</span>.<span style=color:#a6e22e>getWXContext</span>().<span style=color:#a6e22e>FROM_OPENID</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 1. 内容安全检测（必须，否则过不了审核）
+</span></span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>sec</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>cloud</span>.<span style=color:#a6e22e>openapi</span>.<span style=color:#a6e22e>security</span>.<span style=color:#a6e22e>msgSecCheck</span>({ <span style=color:#a6e22e>content</span> })
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>sec</span>.<span style=color:#a6e22e>result</span>.<span style=color:#a6e22e>suggest</span> <span style=color:#f92672>!==</span> <span style=color:#e6db74>&#39;pass&#39;</span>) {
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>return</span> { <span style=color:#a6e22e>ok</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>false</span>, <span style=color:#a6e22e>msg</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;内容不太合适，换种说法试试呀～&#39;</span> }
+</span></span><span style=display:flex><span>  }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 2. 生成随机匿名昵称
+</span></span></span><span style=display:flex><span>  <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>nickname</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>randomNickname</span>()
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>  <span style=color:#75715e>// 3. 写入数据库
+</span></span></span><span style=display:flex><span>  <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>db</span>.<span style=color:#a6e22e>collection</span>(<span style=color:#e6db74>&#39;letters&#39;</span>).<span style=color:#a6e22e>add</span>({
+</span></span><span style=display:flex><span>    <span style=color:#a6e22e>data</span><span style=color:#f92672>:</span> {
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>_openid</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>openid</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>nickname</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>content</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>mood</span><span style=color:#f92672>:</span> <span style=color:#a6e22e>mood</span> <span style=color:#f92672>||</span> <span style=color:#e6db74>&#39;平静&#39;</span>,
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>replies</span><span style=color:#f92672>:</span> [],
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>createdAt</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>new</span> Date(),
+</span></span><span style=display:flex><span>      <span style=color:#a6e22e>status</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;published&#39;</span>
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>  })
+</span></span><span style=display:flex><span>  <span style=color:#66d9ef>return</span> { <span style=color:#a6e22e>ok</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span> }
+</span></span><span style=display:flex><span>}</span></span></code></pre></div></div><h3 id=2-树洞收信随机读信>2. 树洞收信（随机读信）</h3><p>「邮局」的浪漫在于：你不知道会收到谁的心事。用云数据库的聚合管道做随机抽样最稳：</p><div class=code-block><button class=code-copy type=button hidden aria-label="Copy code to clipboard">
+<span class=code-copy-label aria-hidden=true>Copy</span></button><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-js data-lang=js><span style=display:flex><span><span style=color:#75715e>// cloudfunctions/getRandomLetter/index.js
+</span></span></span><span style=display:flex><span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>res</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>db</span>.<span style=color:#a6e22e>collection</span>(<span style=color:#e6db74>&#39;letters&#39;</span>)
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>aggregate</span>()
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>match</span>({ <span style=color:#a6e22e>status</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#39;published&#39;</span> })
+</span></span><span style=display:flex><span>  .<span style=color:#a6e22e>sample</span>({ <span style=color:#a6e22e>size</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span> })   <span style=color:#75715e>// 随机抽 1 封
+</span></span></span><span style=display:flex><span>  .<span style=color:#a6e22e>end</span>()</span></span></code></pre></div></div><p>前端拿到后展示内容 + 心情标签，并提供一个「回信」按钮，回信同样走内容安全审核再写回 <code>replies</code> 数组。</p><h2 id=五平台审核合规最容易翻车的环节>五、平台审核合规：最容易翻车的环节</h2><p>微信对内容类小程序审核很严，<strong>没有内容安全机制基本必被拒</strong>。我踩过两个坑，记下来给大家避雷：</p><ol><li><strong>文本必须过 <code>security.msgSecCheck</code></strong>。用户产生的文字（信件、回信）在入库前都要检测，命中敏感词就拒绝。图片类要用 <code>imgSecCheck</code>。</li><li><strong>隐私与匿名要写清楚</strong>。虽然我们不收集个人信息，但小程序后台的「用户隐私保护指引」还是要如实填写「我们如何处理用户数据」，并在页面放一句隐私说明，审核员会看。</li></ol><blockquote><p>经验：把内容安全当成「功能的一部分」而不是「上线前的补丁」。越早接入，返工越少。</p></blockquote><h2 id=六部署上线零成本>六、部署上线（零成本）</h2><p>云开发的部署简单到有点不真实：</p><ol><li>微信开发者工具里「上传」代码，填版本号和备注；</li><li>到 <strong>微信公众平台 → 版本管理 → 提交审核</strong>；</li><li>审核一般 1~2 天，通过后「全量发布」即可；</li><li>全程没有服务器、没有域名、没有费用，免费额度完全覆盖课程项目的访问量。</li></ol><p>唯一要花钱的是「认证费」（300 元/年，个人主体可免，但部分类目需要）。课程项目用个人主体 + 非特殊类目就能跑通。</p><h2 id=七给新手的几点建议>七、给新手的几点建议</h2><ul><li><strong>先跑通最小闭环</strong>：发信 → 读信 → 回信，三个云函数就够讲一个完整故事。</li><li><strong>注释写详细</strong>：课程项目答辩时，老师更看重构思和代码可读性，不是花活。</li><li><strong>云开发免费额度够用，但注意调用频率</strong>，批量操作（如聚合）要控制次数。</li><li><strong>审核是项目的一部分</strong>，别等到最后一天才提交。</li></ul><hr><p>一个小程序从想法到上线，最有成就感的不是代码本身，而是「真的有陌生人在用你写的东西倾诉」。如果你也在做课程项目，欢迎在评论区聊聊你的选题 🐱</p><p><em>（文中代码为云开发典型写法示意，结构与真实项目一致，具体字段可按需调整。）</em></p><ul class=pa0><li class="list di"><a href=/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">小程序</a></li><li class="list di"><a href=/categories/%E8%AF%BE%E7%A8%8B%E5%AE%9E%E8%B7%B5/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">课程实践</a></li></ul><ul class=pa0><li class="list di"><a href=/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">微信小程序</a></li><li class="list di"><a href=/tags/%E4%BA%91%E5%BC%80%E5%8F%91/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">云开发</a></li><li class="list di"><a href=/tags/%E9%A1%B9%E7%9B%AE%E5%A4%8D%E7%9B%98/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">项目复盘</a></li><li class="list di"><a href=/tags/%E5%BE%AE%E4%BF%A1%E4%BA%91%E5%BC%80%E5%8F%91/ class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">微信云开发</a></li></ul></div></article></main><footer class=cute-footer role=contentinfo><div class=cute-footer__inner><span class=cute-footer__paw>🐾</span>
+<span>&copy; 2026 mliko 的小窝 · 用 ❤️ 与 🐱 搭建</span></div></footer></body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

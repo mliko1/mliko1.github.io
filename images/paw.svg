@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="爪印">
+  <g fill="#ffd9e6">
+    <ellipse cx="32" cy="42" rx="17" ry="14"/>
+    <circle cx="16" cy="26" r="6"/>
+    <circle cx="31" cy="19" r="6.5"/>
+    <circle cx="48" cy="26" r="6"/>
+  </g>
+</svg>
